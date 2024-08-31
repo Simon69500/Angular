@@ -9,9 +9,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
     padding-right: 10%;
     width: 80%;
-    background-color: #DA001E;
+
+    background-image: url('/assets/imgHeader.jpg');
+    background-size: cover;
+    background-position: right 35% bottom 70%;
 }
 
 .icon-nav {

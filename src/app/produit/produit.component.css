@@ -1,0 +1,52 @@
+/* Style pour le titre de la section de produits */
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    font-size: 1.8em;
+    color: #DA001E;
+}
+
+/* Style pour le conteneur des produits */
+.produits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Espace entre les produits */
+}
+
+/* Style pour chaque élément de produit */
+.produits-liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    background-color: #da001d7e;
+    padding: 15px;
+    max-width: 250px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produits-liste:hover {
+    transform: scale(1.02);
+}
+
+/* Style pour les titres et descriptions des produits */
+.title-produit {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #151217;
+    text-align: center;
+    background-color: #da001d00;
+}
+
+.p-produit {
+    font-family: Comfortaa, sans-serif;
+    color: #151217;
+    text-align: center;
+    background-color: #da001d00;
+}

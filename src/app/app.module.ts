@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { ProduitDetailComponent } from './produit-detail/produit-detail.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FilterByNamePipe } from './filter-by-name.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     ProduitDetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SearchBarComponent,
+    FilterByNamePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

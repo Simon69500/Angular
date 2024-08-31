@@ -1,63 +1,142 @@
-
+/* Style pour le conteneur principal */
 #presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 2%;
-    margin-bottom: 2%;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+    background-image: url('/assets/Gaulois.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-#card {
-display: flex;
-flex-direction: column;
+#presentation:hover {
+    transform: scale(1.05);
 }
 
+/* Style pour le titre de la section */
+h1 {
+    color: #DA001E;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Style pour la description */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+    margin: 0;
+
+    color: black;
+    background-color:rgb(249, 208, 163, 0.432);
+}
+
+/* Style pour la section de recherche */
 #recherche {
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 2%;
 }
 
+/* Style pour la section de tri */
 .trie {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding-right: 5%;
-
     margin-bottom: 2%;
 }
 
+/* Style pour le titre de la section de produits */
 .title {
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
+    font-size: 1.8em;
+    color: #DA001E;
 }
 
+/* Style pour le conteneur des produits */
 .produits {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Espace entre les produits */
 }
 
+/* Style pour chaque élément de produit */
 .produits-liste {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-
-    border: solid black;
-    border-radius: 5%;
-    
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
     background-color: #da001d7e;
+    padding: 15px;
+    max-width: 250px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.title-produit, .p-produit {
+.produits-liste:hover {
+    transform: scale(1.02);
+}
+
+/* Style pour les titres et descriptions des produits */
+.title-produit {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #151217;
+    text-align: center;
     background-color: #da001d00;
 }
 
 .p-produit {
-    font-family: Comfortaa;
+    font-family: Comfortaa, sans-serif;
+    color: #151217;
+    text-align: center;
+    background-color: #da001d00;
+}
+
+/* Style pour les boutons de tri */
+#classement {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#classement h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color:#151217;
+}
+
+#classement button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #151217;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#classement button:hover {
+    background-color: #0056b3;
 }
