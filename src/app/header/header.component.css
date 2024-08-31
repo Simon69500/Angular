@@ -1,3 +1,56 @@
-* {
-    background-color: #FDD90B;
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DA001E;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10%;
+    width: 80%;
+    background-color: #DA001E;
+}
+
+.icon-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    width: 10%;
+    height: 30%;
+
+    border-radius: 10%;
+    border: thick double #FDD90B;
+    background-color: #da001d;
+
+    color: #151217; 
+    transition: color 0.3s; 
+
+    font-size: large;
+}
+
+/* Changer la couleur au survol */
+.icon-nav:hover {
+    color: blue; /* Couleur au survol */
+}
+
+/* Changer la couleur lors du clic */
+.icon-nav:active {
+    color: #FDD90B; 
+}
+
+/* Style pour l'élément actif */
+.icon-nav.active {
+    color: #FDD90B; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    background-color: #da001d;
 }

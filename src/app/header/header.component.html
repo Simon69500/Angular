@@ -1,12 +1,12 @@
 
 <div id="header">
-    <a routerLink="/"><img class="logo" src="Logo_au petit village.jpg" alt="logo de l'entreprise" width="100px" height="100px"></a>
-    <div class="nav">
-        <nav>
-            <a routerLink="/">Accueil</a>
-            <a routerLink="/propos">A Propos</a>
-            <a routerLink="/produits">Produits</a>
-          </nav>
-    </div>
-</div>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <img class="logo" src="Logo_au petit village.jpg" alt="logo de l'entreprise" width="100px" height="100px">
+    </a>
+    <nav class="nav">
+      <a class="icon-nav" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+      <a class="icon-nav" routerLink="/propos" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">A Propos</a>
+      <a class="icon-nav" routerLink="/produits" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Produits</a>
+    </nav>
+  </div>
 
