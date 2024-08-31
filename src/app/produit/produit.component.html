@@ -1,1 +1,13 @@
-<p>produit works!</p>
+<app-header></app-header>
+
+<div id="contenair">
+    <h2>Découvrez nos figurines inspirées par Astérix et Obélix !</h2>
+    <div class="produits">
+        <div class="produits-liste" *ngFor="let figurines of figurines">
+            <h3>{{figurines.name}}</h3>
+            <img src="{{figurines.image}}" alt="{{figurines.name}}"  width="200" height="200">
+            <p><strong>Prix :{{figurines.prix}}</strong></p>
+            <p><strong>description :{{figurines.description}}</strong></p>
+        </div>
+    </div>
+</div>
