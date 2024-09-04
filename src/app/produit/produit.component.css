@@ -1,4 +1,4 @@
-/* Style pour le titre de la section de produits */
+/* Style pour le conteneur principal */
 #contenair {
     display: flex;
     flex-direction: column;
@@ -69,15 +69,17 @@
 }
 
 .p-description-title {
-    font-size: 16px; /* Taille du texte pour le titre */
-    font-weight: bold; /* Mettre en gras le titre pour le rendre plus visible */
-    color: #151217; /* Couleur du titre */
-    margin-right: 5px; /* Espacement entre le titre et la description */
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #151217; 
+    margin-right: 5px; 
     background-color: #da001d00;
   }
   
   .p-description-text {
-    font-size: 14px; /* Taille du texte de la description */
+    font-size: 14px; 
     background-color: #da001d00;
+
+    
   }
 
