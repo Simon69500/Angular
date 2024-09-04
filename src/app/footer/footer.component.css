@@ -1,0 +1,25 @@
+* {
+    background-color: #DA001E ;
+    color: #FDD90B ;
+}
+
+#red-sociaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.icon-sociaux {
+    display: flex;
+    justify-content:space-evenly;
+
+    width: 20%;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

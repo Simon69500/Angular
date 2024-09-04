@@ -4,10 +4,26 @@
     <h2 class="title">Découvrez nos figurines inspirées par Astérix et Obélix !</h2>
     <div class="produits">
         <div class="produits-liste" *ngFor="let figurines of figurines">
+            
             <h3 class="title-produit">{{figurines.name}}</h3>
+
             <img src="{{figurines.image}}" alt="{{figurines.name}}"  width="200" height="200">
-            <p class="p-produit"><strong class="p-produit">Prix :{{figurines.prix}}</strong></p>
-            <p class="p-produit"><small class="p-produit">description :{{figurines.description}}</small></p>
+
+            <p class="p-produit">
+                <strong class="p-produit">Prix :{{figurines.prix}}</strong>
+            </p>
+
+            <p class="p-produit">
+                <strong class="p-description-title">Description :</strong>
+                <span class="p-description-text">{{figurines.description}}</span>
+              </p>
+
+            <p class="p-produit">
+                <small class="p-produit">dimensions :{{figurines.dimension}}</small>
+            </p>
+
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>

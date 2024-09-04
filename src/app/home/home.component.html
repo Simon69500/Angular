@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div id="presentation">
     <h1>Bienvenue chez "Au Petit Village" !</h1>
-    <p>Plongez dans l'univers magique des aventures d'Astérix et Obélix avec nos figurines artisanales uniques. Chaque pièce est soigneusement confectionnée à la main, capturant l'esprit et la joie des célèbres héros gaulois. Parfaites pour les nostalgiques et les amateurs de la bande dessinée, nos figurines ajouteront une touche d’enchantement à votre collection. Explorez notre catalogue pour découvrir la magie du village d'Astérix, et n’hésitez pas à nous contacter pour toute question ou commande personnalisée. Vive les Gaulois !</p>
+    <p>Plongez dans l'univers magique des aventures d'Astérix et Obélix avec nos figurines artisanales uniques. Chaque pièce est soigneusement confectionnée à la main, capturant l'esprit et la joie des célèbres héros gaulois. Parfaites pour les nostalgiques et les amateurs de la bande dessinée, nos figurines ajouteront une touche d’enchantement à votre collection. Explorez notre catalogue pour découvrir la magie du village d'Astérix. Vive les Gaulois !</p>
 </div>
 <div id="catalogue">
     <!-- Barre de recherche -->
@@ -13,20 +13,21 @@
 
     <div id="classement">
         <h4>Classement par prix</h4>
-        <button (click)="sortByPrice('asc')">Prix Croissant</button>
-        <button (click)="sortByPrice('desc')">Prix Décroissant</button>
+        <button (click)="sortOrder = 'asc'">Prix Croissant</button>
+        <button (click)="sortOrder = 'desc'">Prix Décroissant</button>
     </div>
 
     <!-- Liste des figurines avec filtre -->
     <div *ngIf="filteredItems.length > 0">
         <h2 class="title">Découvrez nos figurines inspirées par Astérix et Obélix !</h2>
         <div class="produits">
-            <div class="produits-liste" *ngFor="let item of filteredItems">
+            <div class="produits-liste" *ngFor="let item of (filteredItems | appSortByPrice:sortOrder)">
                 <h3 class="title-produit">{{ item.name }}</h3>
-                <img [src]="item.image" alt="{{ item.name }}" width="100px" height="auto">
+                <img [src]="item.image" alt="{{ item.name }}" width="100" height="auto">
                 <p class="p-produit"><strong class="p-produit">Prix :{{item.prix}}</strong></p>
-                <p class="p-produit"><small class="p-produit">description :{{item.description}}</small></p>
             </div>
         </div>
     </div>
 </div>
+<app-footer></app-footer>
+

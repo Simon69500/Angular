@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #DA001E;
+    
 }
 
 .nav {
@@ -11,11 +12,11 @@
     align-items: center;
 
     padding-right: 10%;
-    width: 80%;
+    width: 100%;
 
     background-image: url('/assets/imgHeader.jpg');
     background-size: cover;
-    background-position: right 35% bottom 70%;
+    background-position: right 35% bottom 65%;
 }
 
 .icon-nav {
@@ -55,6 +56,6 @@
 .logo {
     display: flex;
     align-items: center;
-    padding-left: 10%;
+    
     background-color: #da001d;
 }
