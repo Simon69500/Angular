@@ -1,8 +1,10 @@
 #header {
     display: flex;
     justify-content: space-between;
+
     background-color: #DA001E;
-    
+    padding: 10px 0px;
+
 }
 
 .nav {
@@ -13,10 +15,6 @@
 
     padding-right: 10%;
     width: 100%;
-
-    background-image: url('/assets/imgHeader.jpg');
-    background-size: cover;
-    background-position: right 35% bottom 65%;
 }
 
 .icon-nav {
@@ -25,37 +23,31 @@
     justify-content: center;
     text-decoration: none;
 
-    width: 10%;
-    height: 30%;
 
-    border-radius: 10%;
-    border: thick double #FDD90B;
-    background-color: #da001d;
-
-    color: #151217; 
-    transition: color 0.3s; 
-
-    font-size: large;
+    padding: 10px;
+    color: #151217;
+    transition: color 0.3s;
+    font-size: x-large;
 }
 
 /* Changer la couleur au survol */
 .icon-nav:hover {
-    color: blue; /* Couleur au survol */
+    color: #FDD90B; /* Couleur au survol */
 }
 
 /* Changer la couleur lors du clic */
 .icon-nav:active {
-    color: #FDD90B; 
+    color: #FDD90B;
 }
 
 /* Style pour l'élément actif */
 .icon-nav.active {
-    color: #FDD90B; 
+    color: #FDD90B;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    
-    background-color: #da001d;
+    border-radius: 50%;
+
 }

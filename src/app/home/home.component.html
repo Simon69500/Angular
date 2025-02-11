@@ -1,8 +1,14 @@
 <app-header></app-header>
+
+<img src="/assets/couuuuursasterix.png" alt="">
+
 <div id="presentation">
+  <div>
     <h1>Bienvenue chez "Au Petit Village" !</h1>
     <p>Plongez dans l'univers magique des aventures d'Astérix et Obélix avec nos figurines artisanales uniques. Chaque pièce est soigneusement confectionnée à la main, capturant l'esprit et la joie des célèbres héros gaulois. Parfaites pour les nostalgiques et les amateurs de la bande dessinée, nos figurines ajouteront une touche d’enchantement à votre collection. Explorez notre catalogue pour découvrir la magie du village d'Astérix. Vive les Gaulois !</p>
-</div>
+   </div>
+  </div>
+
 <div id="catalogue">
     <!-- Barre de recherche -->
     <app-search-bar (search)="onSearch($event)"></app-search-bar>
@@ -18,13 +24,13 @@
     </div>
 
     <!-- Liste des figurines avec filtre -->
-    <div *ngIf="filteredItems.length > 0">
+    <div class="cardProduit" *ngIf="filteredItems.length > 0">
         <h2 class="title">Découvrez nos figurines inspirées par Astérix et Obélix !</h2>
         <div class="produits">
             <div class="produits-liste" *ngFor="let item of (filteredItems | appSortByPrice:sortOrder)">
                 <h3 class="title-produit">{{ item.name }}</h3>
-                <img [src]="item.image" alt="{{ item.name }}" width="100" height="auto">
-                <p class="p-produit"><strong class="p-produit">Prix :{{item.prix}}</strong></p>
+                <img class="img-produit" [src]="item.image" alt="{{ item.name }}" width="100" height="auto">
+                <p class="p-produit"><strong class="p-produit">Prix : {{item.prix}}</strong></p>
             </div>
         </div>
     </div>
