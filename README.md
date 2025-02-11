@@ -37,7 +37,10 @@ Ce projet consiste à créer un site web pour l'entreprise **"Au petit village"*
 - **Services** : Gestion des produits via un service Angular
 - **Routing** : Angular Routing pour la gestion des différentes pages du site.
 - **Pipes** : Création de pipes pour le tri des produits et la recherche par nom.
-  
+
+## Capture d'écran
+- ![Au-petit-village](https://github.com/user-attachments/assets/ddd49287-81f0-4c24-b746-3a6264b56328)
+
 ## Installation et Prérequis
 
 1. **Clone le projet**
